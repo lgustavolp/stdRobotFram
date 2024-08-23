@@ -1,4 +1,4 @@
-# Study Playwright
+# Study Robot Framework
 
 Sample Project Study for the create some test cases using Robot Framework + JavaScript (Parodify Project)
 
@@ -23,4 +23,3 @@ If you want to support this project, leave a ⭐.
 ___
 
 This project was created by [Luiz Gustavo Lucena].
-
