@@ -1,0 +1,9 @@
+{"level":30,"time":"2024-08-19T17:43:52.579Z","pid":10868,"hostname":"lgustavo","msg":"Listening on 60090"}
+(node:10868) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-08-19T17:43:53.107Z","pid":10868,"hostname":"lgustavo","msg":"Start of node method initializeExtension"}
+{"level":30,"time":"2024-08-19T17:43:53.108Z","pid":10868,"hostname":"lgustavo","msg":"Initializing extension: C:\\QAx\\projects\\parodify-robot\\resources\\module.js"}
+{"level":30,"time":"2024-08-19T17:43:53.112Z","pid":10868,"hostname":"lgustavo","msg":"End of node method initializeExtension"}
+{"level":30,"time":"2024-08-19T17:43:53.109Z","pid":10868,"hostname":"lgustavo","msg":"Adding 1 keywords from JS Extension"}
+{"level":30,"time":"2024-08-19T17:43:53.521Z","pid":10868,"hostname":"lgustavo","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-08-19T17:43:53.521Z","pid":10868,"hostname":"lgustavo","msg":"End of node method closeAllBrowsers"}
