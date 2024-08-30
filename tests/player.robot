@@ -7,7 +7,7 @@ Test Teardown    Close Browser    ALL
 *** Test Cases ***
 Deve tocar uma musica
 
-    [Tags]    Must Play Music
+    [Tags]    Must_Play_Music
     ${song_name}    Set Variable    Smells Like Test Script
     
     Mock My Song
@@ -32,8 +32,8 @@ Start Session
     New Browser    browser=chromium    headless=True
     New Page    about:blank
 
-#Finish Session
-#    Take Screenshot
+    #Finish Session
+    #Take Screenshot
 
 Get play button
     [Arguments]    ${song_name}
