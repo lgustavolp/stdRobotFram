@@ -24,7 +24,7 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -U -r requirements.txt
                 sudo npm install playwright@latest
-                sudo npx @playwright install-deps
+                sudo npx playwright install-deps
                 rfbrowser init
 
             - name: Runn RF WEB Tests
