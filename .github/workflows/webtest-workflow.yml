@@ -34,10 +34,10 @@ jobs:
 
             - name: Upload Tests Results
               if: always()
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with: 
                 name: results-chromium
                 path: ./results
-                if-no-files-foud: ignore
+                if-no-files-found: ignore
                 retention-days: 2 
             
