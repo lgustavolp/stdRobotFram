@@ -2,7 +2,7 @@
 Library   Browser    jsextension=${EXECDIR}/resources/module.js
 
 Test Setup    Start Session
-Test Teardown    Close Browser
+Test Teardown    Close Browser    ALL
 
 *** Test Cases ***
 Deve tocar uma musica
