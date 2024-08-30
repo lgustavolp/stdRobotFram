@@ -31,8 +31,8 @@ Start Session
     New Browser    browser=chromium    headless=False
     New Page    about:blank
 
-Finish Session
-    Take Screenshot
+#Finish Session
+#    Take Screenshot
 
 Get play button
     [Arguments]    ${song_name}
