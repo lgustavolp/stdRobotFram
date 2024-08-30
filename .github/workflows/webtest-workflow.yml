@@ -52,9 +52,7 @@ jobs:
               if: always()
               uses: joonvena/robotframework-reporter-action@v2.5
               with: 
-                report_path: results-chromium
                 gh_access_token: ${{ secrets.github_token }}
-                show_passed_tests: true
                   
 
             
