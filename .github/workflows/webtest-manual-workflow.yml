@@ -1,4 +1,4 @@
-name: Run WEB Tests
+name: Manual Run WEB Tests
 run-name: Manual - Web Tests Run
 on: 
   workflow_dispatch:
