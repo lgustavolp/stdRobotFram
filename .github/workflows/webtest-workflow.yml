@@ -44,7 +44,7 @@ jobs:
 
             - name: Download Results
               if: always()
-              uses: actions/download-artifact@v1
+              uses: actions/download-artifact@v4
               with: 
                 name: results-chromium
 
