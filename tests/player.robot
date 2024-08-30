@@ -28,7 +28,7 @@ Deve tocar uma musica
 *** Keywords ***
 
 Start Session
-    New Browser    browser=chromium    headless=False
+    New Browser    browser=chromium    headless=True
     New Page    about:blank
 
 #Finish Session
