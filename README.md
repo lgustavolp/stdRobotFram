@@ -1,6 +1,6 @@
 # Study Robot Framework
 
-Sample Project Study for the create some test cases using Robot Framework + JavaScript (Parodify Project)
+Sample Project Study for the create some test cases using Robot Framework + JavaScript (Parodify Project) + GitHub Actions 
 
 ## Pre-requirements
 
@@ -14,7 +14,26 @@ Then Install Robot Framework in the Project Folder
 
 ## Tests
 
-You can run the tests simulating a desktop or mobile viewport.
+```
+robot -d ./results -v HEADLESS:true -v BROWSER:chromium tests
+```
+## Robot Framework Reporter Action
+[Link](https://github.com/joonvena/robotframework-reporter-action?tab=readme-ov-file#example-usage)
+# Example usage
+```
+   generate_report:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Download reports
+          uses: actions/download-artifact@v1
+          with:
+            name: reports
+        - name: Send report to commit
+          uses: joonvena/robotframework-reporter-action@v2.5
+          with:
+            gh_access_token: ${{ secrets.GITHUB_TOKEN }}
+```
 
 ## Support this project
 
