@@ -1,5 +1,5 @@
-name: Manual Run WEB Tests
-run-name: Manual - Web Tests Run
+name: Manual Run WEB Tests - Browse
+run-name: Manual - Web Tests Run - browse
 on: 
   workflow_dispatch:
     inputs:
