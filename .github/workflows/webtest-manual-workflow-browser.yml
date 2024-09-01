@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       browser: 
-        type: string
+        type: choice
         description: What's the browser to be executed ?
         required: true
+        options:
+          - "chromium"
+          - "firefox"
+          - "webkit"
 jobs:
     web-tests:
         runs-on: ubuntu-20.04
