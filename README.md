@@ -2,6 +2,8 @@
 
 Sample Project Study for the create some test cases using Robot Framework + JavaScript (Parodify Project) + GitHub Actions 
 
+[GitHub Actions - Documentation](https://docs.github.com/en/actions)
+
 ## Pre-requirements
 
 It is required to have Node.js and npm installed to run this project.
