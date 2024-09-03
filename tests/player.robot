@@ -1,5 +1,5 @@
 *** Settings ***
-Library   Browser    jsextension=${EXECDIR}/resources/module.js
+Library   Browser    jsextension=./resources/module.js
 
 Test Setup    Start Session
 Test Teardown    Close Browser    ALL
