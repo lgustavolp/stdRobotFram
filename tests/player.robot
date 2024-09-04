@@ -5,7 +5,7 @@ Test Setup    Start Session
 Test Teardown    Close Browser    ALL
 
 *** Test Cases ***
-Deve tocar uma musica
+Must play a Music
 
     [Tags]    Must_Play_Music
     ${song_name}    Set Variable    Smells Like Test Script
