@@ -17,7 +17,7 @@ Then Install Robot Framework in the Project Folder
 ## Tests
 
 ```
-robot -d ./results -v HEADLESS:true -v BROWSER:chromium tests
+robot -d ./logs player.robot
 ```
 ## Robot Framework Reporter Action
 [Link](https://github.com/joonvena/robotframework-reporter-action?tab=readme-ov-file#example-usage)
