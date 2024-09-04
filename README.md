@@ -26,9 +26,11 @@ Install Robot Framework robotframework-browser (rfbrowser init).
 ```
 robot -d ./logs player.robot
 ```
+
 ## Robot Framework Reporter Action
 [Link](https://github.com/joonvena/robotframework-reporter-action?tab=readme-ov-file#example-usage)
-# Example usage
+
+### Example usage
 ```
    generate_report:
         runs-on: ubuntu-latest
@@ -43,16 +45,17 @@ robot -d ./logs player.robot
           with:
             gh_access_token: ${{ secrets.GITHUB_TOKEN }}
 ```
+
 ## GitHub Actions
 
 * Manual Run WEB Tests <parameter - [TAG]> - Use the [Tags] inside the test file.
 * Manual Run WEB Tests <parameter - [BROWSER]> - Use the [BROWSER] NAME option select.
 * Run WEB Tests - Automatic execution after each pull request.
 
-## DOckerfile
+## Dockerfile
 
 ```
-Using Powershell
+Using Powershell:
 
 docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources -v ${PWD}/results:/results --entrypoint robot lgustavolp/robotframework --outputdir /results /tests/player.robot
 ```
