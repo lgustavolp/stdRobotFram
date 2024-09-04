@@ -43,6 +43,19 @@ robot -d ./logs player.robot
           with:
             gh_access_token: ${{ secrets.GITHUB_TOKEN }}
 ```
+## GitHub Actions
+
+* Manual Run WEB Tests <parameter - [TAG]> - Use the [Tags] inside the test file.
+* Manual Run WEB Tests <parameter - [BROWSER]> - Use the [BROWSER] NAME option select.
+* Run WEB Tests - Automatic execution after each pull request.
+
+## DOckerfile
+
+```
+Using Powershell
+
+docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources -v ${PWD}/results:/results --entrypoint robot lgustavolp/robotframework --outputdir /results /tests/player.robot
+```
 
 ## Support this project
 
