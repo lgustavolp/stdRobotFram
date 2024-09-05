@@ -4,6 +4,7 @@ Sample Project Study for the create some test cases using Robot Framework + Java
 
 ## Features
 * GitHub Actions;
+* GitLab (using Dockerfile)
 * Dockerfile;
 * Mock (Browser Library);
 
@@ -59,6 +60,12 @@ Using Powershell:
 
 docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources -v ${PWD}/results:/results --entrypoint robot lgustavolp/robotframework --outputdir /results /tests/player.robot
 ```
+
+## Gitlab
+
+* Create a new project (using import project on Gitlab);
+* Define a new variable with the GIT_TOKEN created on Github;
+* Create new pipeline and run.
 
 ## Support this project
 
