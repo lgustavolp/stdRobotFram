@@ -10,23 +10,34 @@ stages:
 variables:
   DOCKER_DRIVER: overlay2
 
+cache:
+  key: my-cache
+  paths:
+    - docker_cache/
+
 before_script:
   - docker info
 
 build_image:
   stage: build
   script:
-    # Construir a imagem Docker usando o Dockerfile da raiz
-    - docker build -t lgustavolp/robotframework .
+    # Build the Docker image and cache it locally
+    - mkdir -p docker_cache
+    - docker build --build-arg GIT_TOKEN=${GIT_TOKEN} -t lgustavolp/robotframework .
+    # Save the image cache to the docker_cache directory
+    - docker save lgustavolp/robotframework -o docker_cache/robotframework.tar
+  artifacts:
+    paths:
+      - docker_cache/
 
 test_robot:
   stage: test
   script:
-    # Executar a imagem Docker construída e rodar os testes
-    - docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources \
-    -v ${PWD}/results:/results --entrypoint robot lgustavolp/robotframework \
-    --outputdir /results /tests/player.robot
+    # Restore the image from the cache and load it into Docker
+    - docker load -i docker_cache/robotframework.tar
+    # Run the Docker image and run the tests
+    - docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources -v ${PWD}/results:/results --entrypoint robot lgustavolp/robotframework --outputdir /results /tests/player.robot
   artifacts:
     paths:
-      - results
+      - results/
     expire_in: 1 week
