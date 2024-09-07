@@ -16,6 +16,9 @@ RUN apt install -y python3-pip
 RUN apt install -y nodejs
 RUN apt install -y npm
 
+#Install playwright
+RUN npx playwright install
+
 #install robotframework and seleniumlibrary
 RUN pip3 install robotframework --break-system-packages
 RUN pip3 install robotframework-browser --break-system-packages
