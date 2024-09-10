@@ -67,7 +67,7 @@ docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources -v ${PWD}/
 * Define a new variable with the GIT_TOKEN created on Github;
 * Create new pipeline and run.
 
-## Jenkins
+## Jenkins (http://localhost:8080/job/QA_JOBS/job/rbtfram_dcker/)
 
 * Create a pipeline with the following steps:
   * Clean Workspace -> Delete old builds;
