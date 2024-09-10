@@ -67,6 +67,15 @@ docker run --rm -v ${PWD}/tests:/tests -v ${PWD}/resources:/resources -v ${PWD}/
 * Define a new variable with the GIT_TOKEN created on Github;
 * Create new pipeline and run.
 
+## Jenkins
+
+* Create a pipeline with the following steps:
+  * Clean Workspace -> Delete old builds;
+  * Checkout Repository -> Checkout the repository with the DOckerfile and tests;
+  * Build Docker Image -> Use the DOckerfile to build a new image;
+  * Run Tests -> Run the robot framework tests;
+  * Delete the image created.
+
 ## Support this project
 
 If you want to support this project, leave a ⭐.
